@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "61fd5f30d48be69321274200"
+  },
+  "name": "Rohit Garg",
+  "email": "rohit@rohit.com",
+  "encry_password": "8f41152f318aec63690985b2a7924912c2d47c97f55862034e6a906ed98d0648",
+  "salt": "0cd8c710-85de-11ec-9688-d7bbe41923d1",
+  "createdAt": {
+    "$date": "2022-02-04T17:15:28.652Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-04T17:15:28.652Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fe6e0687153f4d362baa4c"
+  },
+  "name": "Rohit Garg 2",
+  "email": "rohit22@rohit.com",
+  "encry_password": "bc8b50c0649e7b70fb973aaf3c7dda8340462bf6e4ce4809f571b2fb8a4ee302",
+  "salt": "7af2e4f0-867f-11ec-ab2d-536666e43cd7",
+  "createdAt": {
+    "$date": "2022-02-05T12:31:02.349Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-05T12:31:02.349Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62034d8260d5658f295aee85"
+  },
+  "name": "Rohit Garg 4",
+  "email": "rohit44@rohit.com",
+  "encry_password": "27cf97433204f373f3eac9bde76e8819c1efde0bfe3c0b5a13b3631016f54843",
+  "salt": "09f041e0-8967-11ec-ba8c-35b0d0b9ca8d",
+  "createdAt": {
+    "$date": "2022-02-09T05:13:38.319Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-09T05:13:38.319Z"
+  },
+  "__v": 0
+}]

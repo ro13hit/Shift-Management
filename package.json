@@ -1,0 +1,39 @@
+{
+  "name": "hackathon_nodejs_rohit",
+  "version": "1.0.0",
+  "description": "shift allowance backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/r0hit13/hackathon_nodejs_rohit.git"
+  },
+  "author": "Rohit Garg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/r0hit13/hackathon_nodejs_rohit/issues"
+  },
+  "homepage": "https://bitbucket.org/r0hit13/hackathon_nodejs_rohit#readme",
+  "keywords": [],
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-jwt": "^6.1.0",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.0",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}

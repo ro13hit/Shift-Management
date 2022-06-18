@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "d124d265-d41f-4bcd-b3dc-aa351cc9a9a7",
+		"name": "shift",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Rohit Garg 4\",\r\n    \"email\": \"rohit44@rohit.com\",\r\n    \"password\": \"rohit12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"rohit22@rohit.com\",\r\n    \"password\": \"rohit12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZlNmUwNjg3MTUzZjRkMzYyYmFhNGMiLCJpYXQiOjE2NDQwNjQzMDZ9.wSYv5mTRSPkI1I3m3BgmCYywU1ZvGw1Xm2LkCCjvOiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empId\": 2787,\r\n    \"name\": \"final\",\r\n    \"Location\": \"Jaipur\",\r\n    \"Project\": \"random Project\",\r\n    \"Gender\": \"Male\",\r\n    \"Start\": \"2022-03-01T08:00:00.530\",\r\n    \"Recurring\": \"Yes\",\r\n    \"End\": \"2022-03-05T17:00:00.530\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/employee/addNew/61fe6e0687153f4d362baa4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"addNew",
+						"61fe6e0687153f4d362baa4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProjectList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZlNmUwNjg3MTUzZjRkMzYyYmFhNGMiLCJpYXQiOjE2NDQwNjQzMDZ9.wSYv5mTRSPkI1I3m3BgmCYywU1ZvGw1Xm2LkCCjvOiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/employee/getProjectList/61fe6e0687153f4d362baa4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"getProjectList",
+						"61fe6e0687153f4d362baa4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFemaleShifts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZlNmUwNjg3MTUzZjRkMzYyYmFhNGMiLCJpYXQiOjE2NDQwNjQzMDZ9.wSYv5mTRSPkI1I3m3BgmCYywU1ZvGw1Xm2LkCCjvOiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2022,\r\n    \"month\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/employee/getFemaleShifts/61fe6e0687153f4d362baa4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"getFemaleShifts",
+						"61fe6e0687153f4d362baa4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getShiftHistory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZlNmUwNjg3MTUzZjRkMzYyYmFhNGMiLCJpYXQiOjE2NDQwNjQzMDZ9.wSYv5mTRSPkI1I3m3BgmCYywU1ZvGw1Xm2LkCCjvOiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empId\": 2644\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/employee/getShiftHistory/61fe6e0687153f4d362baa4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"getShiftHistory",
+						"61fe6e0687153f4d362baa4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eligibleEmployees",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZlNmUwNjg3MTUzZjRkMzYyYmFhNGMiLCJpYXQiOjE2NDQwNjQzMDZ9.wSYv5mTRSPkI1I3m3BgmCYywU1ZvGw1Xm2LkCCjvOiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\":2022,\r\n    \"month\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/employee/eligibleEmployees/61fe6e0687153f4d362baa4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"eligibleEmployees",
+						"61fe6e0687153f4d362baa4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployeeDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZlNmUwNjg3MTUzZjRkMzYyYmFhNGMiLCJpYXQiOjE2NDQwNjQzMDZ9.wSYv5mTRSPkI1I3m3BgmCYywU1ZvGw1Xm2LkCCjvOiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empId\": 2666,\r\n    \"update\":\r\n        {\"Start\": \"2022-02-12T09:00:00.510\",\r\n        \"End\": \"2022-02-12T15:00:00.510\",\r\n        \"Location\": \"jaipur\",\r\n        \"Project\": \"node js app\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/employee/updateEmployeeDetails/61fe6e0687153f4d362baa4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employee",
+						"updateEmployeeDetails",
+						"61fe6e0687153f4d362baa4c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
